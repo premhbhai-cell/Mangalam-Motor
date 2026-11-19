@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var WA_BASE = "https://wa.me/917068306702";
+  var WA_BASE = "https://wa.me/" + ((window.CMS_SITE && window.CMS_SITE.whatsapp) || "917068306702");
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
